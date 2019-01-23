@@ -8,9 +8,19 @@
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
 /*@import "partials/";*/
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: white;
   width: 100%;
   height: 100px;
   border-bottom: 1px solid #5f6368;
@@ -54,6 +64,7 @@
   font-size: 14px;
   font-weight: 600;
   margin: 0 15px;
+  cursor: pointer;
 }
 
 .navbar .navbar_left .navbar_left_dwn .faq {
@@ -91,7 +102,13 @@
 
 .answer {
   width: 100%;
+  margin: 0 auto;
   height: calc(100vh - 100px);
-  background: red;
+}
+
+.answer h2 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 25px;
 }
 
